@@ -28,13 +28,18 @@ h1 {
   align-items: center;
 }
 
-img {
-  position: absolute;
-    right: 5%;
-    box-shadow: 3px 5px 32px 8px rgba(0,0,0,0.36);
-}
 
-#main {
+  @media (min-width: 32.5em) {
+    h1 {font-size: 2.5em;}
+
+    img {
+        float: left;
+    }
+
+    
+
+
+main {
   font-family: "Roboto", sans-serif;
   margin-left: 50px;
 }

@@ -32,8 +32,13 @@ h1 {
 
     h1 {font-size: 2.5em;}
 
-    img {
-        float: left;
+  img {
+  float: left;
+  width: 100px;
+  height: 140px;
+  margin-top: -80px;
+  margin-right: 20px;
+
     }
 
     

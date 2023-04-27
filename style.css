@@ -28,9 +28,9 @@ h1 {
 }
 
 #header-img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  position: absolute;
+    right: 5%;
+    box-shadow: 3px 5px 32px 8px rgba(0,0,0,0.36);
 }
 
 #main {

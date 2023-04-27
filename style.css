@@ -1,51 +1,59 @@
+
+
 #content {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
   max-width: 800px;
 }
+
 header {
-    font-family: "Nunito" sans-serif;
-    color: #000000;
-    background-color: #DFD6D1;
-    border-radius: 5px;
-    height: 100px;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  background-color: #DFD6D1;
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  align-items: center;
   padding-left: 40px;
   margin-left: 50px;
 }
+
 h1 {
-  font-family: "Oswald" sans-serif;
-  margin-left: 50px;
+  font-family: "Oswald", sans-serif;
+  margin-left: 20px;
   padding-top: 30px;
-    border-radius: 5px;
-    height: 100px;
-  padding-left: 40px;
-  margin-left: 50px;
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 
-}
- 
- }
-#main {
-    font-family: "Roboto", sans-serif;
-  margin-left: 50px;
-}
-h2 {
-  border-bottom: solid;
-
-}
-a{
-    color: #BD97CB;
-}
- a:hover {
-   color: #000000;}
-img {
-  
+#header-img {
   width: 100px;
   height: 100px;
-  margin-top: -80px;
   margin-right: 20px;
 }
-p {
-    text-align: center;
+
+#main {
+  font-family: "Roboto", sans-serif;
+  margin-left: 50px;
 }
+
+h2 {
+  border-bottom: solid;
+}
+
+a {
+  color: #BD97CB;
+}
+
+a:hover {
+  color: #000000;
+}
+
+p {
+  text-align: center;
+}
+
 footer {
   background-color: #DFD6D1;
   color: #000000;
@@ -53,5 +61,5 @@ footer {
   margin-left: 50px;
   border-radius: 5px;
   padding-bottom: 20px;
-  
 }
+

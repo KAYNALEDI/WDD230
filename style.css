@@ -1,10 +1,10 @@
 #content {
-    background-color: #FBE7C6;
+    background-color: #BD97CB;
   max-width: 800px;
 }
 header {
     font-family: "Nunito" sans-serif;
-    color: #B7B7A4;
+    color: #0a0a0a;
     background-color: #FFAEBC;
     border-radius: 5px;
     height: 100px;
@@ -28,7 +28,7 @@ h2 {
 
 }
 a{
-    color: #6B705C;
+    color: #BD97CB;
 }
  a:hover {
    color: #B7B7A4;}

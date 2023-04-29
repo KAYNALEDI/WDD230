@@ -7,7 +7,8 @@ header, main, footer {
 }
 
 header {
-   background-color: B9A2A2;;
+    margin-top: 0px;
+   background-color: B9A2A2;
     color: #25323C;
   text-align: center;
   padding: 0.5%;
@@ -24,21 +25,11 @@ footer {
     1px 1px 0 #000;
 }
 
-header { 
-  margin-top: 0px;
-}
-footer { 
-    font-size: large;
-}
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-  line-height: 1.5em;
-}
+/* footer {  */
+/*     font-size: large; */
+/* } */
+
 
 h3 {
   background-color: B9A2A2;
@@ -71,7 +62,7 @@ h3 {
 
  .home-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         justift-items: center;
         align-items: center;

@@ -1,7 +1,8 @@
-@media (min-width: 40em) {
-    header {
-        height: 100px;
-        width: 700px;
+@media only screen and (max-width: 1024px) {
+    header,
+    main,
+    footer {
+       max-width: 100%;
     }
     .home-grid {
         grid-template-columns: repeat(2, 300px);
@@ -25,8 +26,8 @@
         max-height: 500px;
     }
 
-    footer {
-        height: 30px;
-        width: 700px;
+/*     footer { */
+/*         height: 30px; */
+/*         width: 700px; */
     }
 }

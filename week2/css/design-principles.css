@@ -1,4 +1,135 @@
-@media (min-width: 65em) {
+
+header, main, footer { 
+    max-width: 80%;
+    margin: 1.25rem auto;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: large;
+}
+
+header {
+   background-color: B9A2A2;;
+    color: #25323C;
+  text-align: center;
+  padding: 0.5%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+footer {
+  background-color: #6B705C;
+  color: #B7B7A4;
+  text-align: center;
+  padding: 0.5%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+header { 
+  margin-top: 0px;
+}
+footer { 
+    font-size: large;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+h3 {
+  background-color: B9A2A2;
+  color: #25323C;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px;
+}
+
+.container {
+  width: 90%;
+  height: 98%;
+ 
+  background-color: rgb(218, 232, 236);
+  border: solid black 2px;
+  border-radius: 10px;
+  text-align: center
+}
+
+.content img{
+  width: 98%;
+    height: 75%;
+  border: solid black 1px;
+  margin-top: 1.5em;
+  padding: 0%;
+  display: inline-block;
+}
+
+ .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 1fr;
+        grid-template-rows: auto;
+        justift-items: center;
+        align-items: center;
+        line-height: 1.5em;
+    }
+    .column-1 {
+        grid-column: 1/2;
+/*         grid-row: 1; */
+    }
+    .column-2 {
+        grid-column: 2/3;
+/*         grid-row: 1; */
+    }
+    .column-3 {
+        grid-column: 1/3;
+/*         grid-row: 2; */
+    }
+
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+a { 
+  color: blue;
+  font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  @media (min-width: 65em) {
     header {
         height: 100px;
         width: 1000px;
@@ -129,8 +260,11 @@ header h2 {
 
 .title-2 {
     width: 100%;
-    height: 40px;
-    border-top-left-radius: 8px;
+    height: 40px; */
+
+
+
+/*     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: #3a4958;    
 }
@@ -167,17 +301,17 @@ header h2 {
     border-radius: 10px;
 
     border: #3a4958 solid .5px;
-}
+} 
 
-.title-3 {
+ .title-3 {
     width: 100%;
     height: 40px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background-color: #3a4958;    
-}
+} */
 
-.title-3 h3 {
+/* .title-3 h3 {
     margin: auto;
     padding-top: 10px;
     padding-left: 10px;
@@ -210,5 +344,6 @@ footer {
   text-align: center;
   margin-left: 50px;
   border-radius: 5px;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; */
+/* }  */
+*/ */

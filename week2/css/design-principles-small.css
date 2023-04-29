@@ -1,5 +1,7 @@
-@media (min-width: 65em) {
-    header {
+@media only screen and (max-width: 767px) {
+    header, 
+    main, 
+    footer {
         height: 100px;
         width: 1000px;
     }
@@ -48,8 +50,8 @@ p {
 
 header {
 
-    margin: auto;
-    margin-top: 10px;
+/*     margin: auto; */
+/*     margin-top: 10px; */
 
     background-color: #B9A2A2;
     color: white;
@@ -204,8 +206,8 @@ header h2 {
 }
 
 
-footer {
-    margin: auto;
+/* footer { */
+/*     margin: auto;
     margin-top: 10px;
 
     background-color: #B9A2A2;
@@ -217,5 +219,5 @@ footer {
 
 footer p {
     padding-top: 7px;
-    display: block;
+    display: block; */
 }

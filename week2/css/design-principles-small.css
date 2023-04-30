@@ -4,7 +4,7 @@
     footer {
        max-width: 100%;
     }
-    .home-grid {
+    main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;

@@ -61,8 +61,12 @@ label {
     min-width: 120px;
     text-align: right;
 }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  
+/* @media only screen and (min-width: 37.5em){ */
 
-@media only screen and (min-width: 37.5em){
     main { 
     grid-template-columns: 1fr 1fr;   
     }
@@ -70,7 +74,11 @@ label {
         grid-column:span 2; 
         }
 }
-@media only screen and (min-width:60em){
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  
+/* @media only screen and (min-width:60em){ */
     main{
         grid-template-columns: 1fr 1fr 1fr;
     }

@@ -1,6 +1,6 @@
 
 body {
-    background-color:B9A2A2;;
+    background-color:B9A2A2;
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -24,7 +24,7 @@ nav button {
 }
 nav {
     font-family: 'Anton', sans-serif;
-    background-color: #faebd7;
+    background-color: #16BDFO;
 }
 nav ul {
     list-style-type: none;
@@ -42,7 +42,8 @@ nav ul li a {
     border-top:1px solid rgba(0,0,0,0.3);
 }
 nav ul li .active a{
-    background-color: rgba(0,0,0,0.2); color: #fff;
+    background-color: rgba(0,0,0,0.2); 
+    color: black;
 }
 nav ul li a:hover {
     background-color: #09b6d9;
@@ -95,7 +96,7 @@ font-family: 'Oswald', sans-serif;
 }
 header {
     font-family: 'Anton', sans-serif;
-    background-color: #eddfdf;
+    background-color: #09B6D9;
     color: #000000;
     text-align: center;
     padding: 1.25rem;  
@@ -105,7 +106,7 @@ header h1 {
 }
 
 footer {
-  background-color: #faebd7;
+  background-color: #09B6D9;
   color: 	#000000;
   text-align: center;
   margin-left: 50px;

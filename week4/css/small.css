@@ -1,8 +1,9 @@
 body {
-
     grid-template-columns: auto 95% auto;
 }
-
+header {
+    box-shadow: 0 0 10px var(--default-dark);
+}
 header h1 {
     width: 230px;
     margin-left: auto;
@@ -28,6 +29,7 @@ nav li.hide a {
     box-shadow: 0 0 10px var(--default-dark);
 }
 nav ul li.hide ~ * a {
+    /* display: none; */
     padding: 0;
     height: 0;
 }

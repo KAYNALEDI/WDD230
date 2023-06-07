@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap");
 
 :root {
-    
     --primary-color: #B9A2A2;
     --heading-font: 'Ubuntu', sans-serif;
     --paragraph-font: 'Quicksand', sans-serif;
@@ -9,7 +8,6 @@
 
 html {
     font-family: var(--paragraph-font);
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,13 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     position: relative;
-    background-color:#B9A2A2;
+    background-color: #B9A2A2;
     padding: 1rem;
     display: grid;
     grid-template-columns: 5fr 1fr .7fr;
     align-items: center;
     color: #000000;
-   // background-image:
 }
 
 nav {
@@ -47,15 +44,20 @@ nav ul li a {
     padding: 1.2rem 2vw;
     text-decoration: none;
     color: #000000;
-    background-color:#B9A2A2;
+    background-color: #B9A2A2;
 }
 
 nav ul li a:hover {
     background-color: #242424;
 }
 
-nav ul {display:none;}
-nav ul.open {display:block;}
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
 
 #hamburgerBtn {
     grid-row: 1;
@@ -67,15 +69,25 @@ nav ul.open {display:block;}
     color: #fff;
 }
 
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;}
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
 
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
 
 .logo {
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
 .logo img {
@@ -86,7 +98,7 @@ nav ul.open {display:block;}
 
 .header h1 {
     font-size: 1.6rem;
-    margin: 9;
+    margin: 0;
 }
 
 .motto {
@@ -97,12 +109,10 @@ nav ul.open {display:block;}
     justify-self: center;
     grid-column: 2;
     text-align: center;
-  
 }
 
 .socials img {
     max-width: 1.6rem;
-  
 }
 
 .date {
@@ -117,19 +127,15 @@ nav ul.open {display:block;}
     color: black;
 }
 
-
 main {
-    
     display: grid;
     grid-gap: 1em;
 }
 
 main div {
-    
     background-color: #B9A2A2;
-    color: #000000;    
+    color: #000000;
 }
-
 
 .join {
     display: none;
@@ -140,6 +146,7 @@ main div {
     text-align: center;
     background-color: transparent;
 }
+
 .hero h2 {
     color: #000000;
     font-size: 17px;
@@ -148,19 +155,25 @@ main div {
     top: 10px;
     left: 50px;
 }
+
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.hero span:nth-child(2) {
+
+.hero span:nth-child(2
+
+) {
     display: none;
 }
+
 .hero span:nth-child(3) {
     display: none;
 }
+
 #joinButton {
-    color:#000000;
+    color: #000000;
     background-color: #B9A2A2;
     border-color: #F7F7F7;
     padding: 10px 8px;
@@ -173,9 +186,9 @@ main div {
     right: 15px;
     border-radius: 8px;
 }
+
 .hero button:hover {
     font-size: large;
- 
 }
 
 h2 {
@@ -188,18 +201,16 @@ h2 {
     text-align: center;
     padding-bottom: 2em;
     padding: 1em;
-  
 }
 
-.event img{
+.event img {
     width: 30%;
     height: 30%;
 }
 
 .event h2 {
-    color:  #000000;
+    color: #000000;
     text-shadow: 2px 2px #B9A2A2;
- 
 }
 
 .weather {
@@ -207,14 +218,16 @@ h2 {
     padding-bottom: 2em;
     padding: 1em;
 }
+
 .weather p {
     font-size: 25px;
 }
 
-.weather h2{
-  color:  #000000;
-  text-shadow: 2px 2px #B9A2A2;
+.weather h2 {
+    color: #000000;
+    text-shadow: 2px 2px #B9A2A2;
 }
+
 .weather img {
     margin-left: 1em;
     float: left;
@@ -226,113 +239,87 @@ h2 {
     font-size: 16px;
     border-top: #F7F7F7;
 }
+
 .weather span:nth-child(2) {
     font-size: 16px;
 }
-.new-release img{
+
+.new-release img {
     width: 50%;
     height: 50%;
     float: left;
 }
 
-.new-release h2{
-  color:  #000000;
-  text-shadow: 2px 2px #FAEDCD;
-  text-align: center;
+.new-release h2 {
+    color: #000000;
+    text-shadow: 2px 2px #FAEDCD;
+    text-align: center;
 }
-
 
 .spotlights {
     display: grid;
     grid-template-columns: 1fr;
-    
 }
+
 .spotlights a {
     margin-left: 2em;
 }
 
-.spotlights{
-   grid-row: 1/2;
-   padding: .5em;
-  text-align: center;
-  background-color:var(--primary-color);
+.spotlights {
+    grid-row: 1/2;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--primary-color);
 }
 
-.spotlights img{
-  width: 40%;
-  height: 40%;
+.spotlights img {
+    width: 40%;
+    height: 40%;
 }
 
 .spotlights h2 {
-    color:  #000000;
+    color: #000000;
     text-shadow: 2px 2px #FAEDCD;
- 
 }
 
-.grow{
-   grid-row: 1/2;
-   padding: .5em;
-  text-align: center;
-  background-color:var(--primary-color);
+.grow {
+    grid-row: 1/2;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--primary-color);
 }
 
-.grow img{
-  width: 40%;
-  height: 40%;
+.grow img {
+    width: 40%;
+    height: 40%;
 }
 
 .grow h2 {
-    color:  #9EAD5A;
+    color: #9EAD5A;
     text-shadow: 2px 2px #FAEDCD;
- 
 }
 
-.honey{
-  grid-row: 2/3;
-  padding: .5em;
-  text-align: center;
-  background-color:var(--primary-color);
+.honey {
+    grid-row: 2/3;
+    padding: 0.5em;
+    text-align: center;
+    background-color: var(--primary-color);
 }
 
-.honey img{
-  width: 30%;
-  height: 25%;
+.honey img {
+    width: 30%;
+    height: 25%;
 }
 
 .honey h2 {
-    color:  #9EAD5A;
+    color: #9EAD5A;
     text-shadow: 2px 2px #FAEDCD;
- 
 }
-
-
 
 footer {
     background-color: #B9A2A2;
     color: #000000;
     text-align: center;
     padding: 5px 10px 5px 10px;
-    
 }
 
-.footer-1 img {
-    /* float: left; */
-    width: 5rem;
-    margin-right: 1em;
-}
-
-.footer-1 h2 {
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-.footer-1 p {
-    margin: .2rem 0;
-}
-
-.final-info > hr {
-    margin: 1.5rem 0 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #B9A2A2;
-    color: #000000;
-}

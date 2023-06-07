@@ -1,23 +1,13 @@
-
-   <div class="banner-box">
-      <img
-        class="logo"
-        src="wee.jpeg" alt="banner"
-      />
-    </div>
-
-<body>    
 * {
   box-sizing: border-box;
-   background-color: #B9A2A2;
+  background-color: #B9A2A2;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: @import
-    url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap");
+  font-family: 'Quicksand', 'Ubuntu', sans-serif;
   font-size: 16px;
   line-height: 160%;
   width: 100%;
@@ -87,4 +77,79 @@ a {
   padding: 0.375em 0.5em 0.1875em;
   font-weight: 600;
   line-height: 1;
+}
+
+.banner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #B9A2A2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #B9A2A2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #FF6B88;
+}
+
+#feedback {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #B9A2A2;
+  padding: 20px;
+  text-align: center;
+}
+
+#foot {
+  margin: 0;
+}
+
+#last-modified {
+  font-weight: bold;
 }

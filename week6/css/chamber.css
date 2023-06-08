@@ -261,6 +261,13 @@ nav a:hover {
     z-index: 7;
 }
 
+
+/* Styles for the main and the children of main */
+main {
+    padding: 1px 1em;
+    background-color: var(--default-light);
+}
+
 h2 {
     font-family: var(--heading-font);
     color: #F7F7F7;
@@ -389,7 +396,7 @@ h2 {
 }
 
 /* Styles for the main and the children of main */
-main {
+/* main {
     padding: 1px 1em;
     background-color: var(--default-light);
 }
@@ -398,7 +405,7 @@ h2 {
 }
 h3, h4 {
     color: var(--default-dark);
-}
+} */
 section {
     padding: 0 1em;
 }

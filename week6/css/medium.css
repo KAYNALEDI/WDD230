@@ -116,12 +116,12 @@
 		width: 100%;
 		margin-top: 20px;
 		padding: 12px;
-		background-color: #18c6f1;
+		background-color: #B9A2A2;
 		border-radius: 5px;
 		border: none;
 	}
 	
 	.join-us:hover{
-		background-color: #ff7d00;
+		background-color: #B9A2A2;
 	}
 }

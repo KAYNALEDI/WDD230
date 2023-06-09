@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap");
 
+:root {
+    
+    --primary-color: #B9A2A2;
+    --heading-font: 'Ubuntu', sans-serif;
+    --paragraph-font: 'Quicksand', sans-serif;
+}
+
+html {
+    font-family: var(--paragraph-font);
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
 .colored {
-    background-color: white;
+    background-color: rgb(218, 139, 139);
     color: #f4f7f5;
 }
 
@@ -21,13 +35,13 @@ h1, h2, h3, h4 {
 }
 
 header {
-	background-color: #15616D;
+	background-color: #955f75;
 	display: grid;
     grid-template-columns: 5fr 1fr 1fr;
 	align-items: center;
 	justify-content: center;
 	padding: 8px;
-	color: #f4f7f5;
+	color: #d9e7de;
 }
 
 header div {
@@ -56,7 +70,7 @@ header div #datetime{
 }
 
 footer {
-	background-color: #15616D;
+	background-color: #B9A2A2;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -114,7 +128,7 @@ header .social a {
 }
 
 header div nav {
-    background-color: black;
+    background-color: #B9A2A2;
 }
 
 header div nav ul {
@@ -135,20 +149,20 @@ header div nav ul li a {
     padding: .8rem 2vw;
     text-decoration: none;
 	color: #f4f7f5;
-    border-top: 1px solid rgb(46, 120, 139); ;
+    border-top: 1px solid rgb(186, 123, 174); ;
     font-size: 0.8rem;
     margin: 0;
     text-align: center;
 }
 
 header div nav ul li.active a {
-    background-color: #ff7d00;
+    background-color:#B9A2A2;
     color: black;
 }
 
 header div nav ul li a:hover {
-    background-color: #ff7d00;
-    color: black;
+    background-color: #B9A2A2;
+    color: #B9A2A2;
 }
 
 header div nav ul {
@@ -230,7 +244,7 @@ aside a {
     display: inherit;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.9rem;
-    color: blue;
+    color: rgb(255, 0, 187);
     text-align: center;
     margin: 0;
 }
@@ -298,7 +312,7 @@ span {
     padding: 12px;
     min-width: 100px;;
     width: 50%;
-    background-color: #18c6f1;
+    background-color: #B9A2A2;
     box-shadow: 0 10px 30px #121335;
     border: none;
 }

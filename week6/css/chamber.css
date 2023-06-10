@@ -397,8 +397,9 @@ h2 {
 
 /* Styles for the main and the children of main */
 /* main { */
-    padding: 1px 1em;
-    background-color: var(--default-light);
+    /* padding: 1px 1em;
+    }
+    background-color: var(--default-light); */
 
 h2 {
     color: var(--main-color);
@@ -518,7 +519,7 @@ footer {
     background-color: #B9A2A2;
     color: #000000;
 } */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap");
+{@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap");
 
 :root {
     --primary-color: #B9A2A2;

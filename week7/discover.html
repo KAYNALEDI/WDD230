@@ -1,210 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OAR CHAMBER SITE | Discover</title>
-    <meta name="description" content="Lesson 7: Discover" WDD 230: Web Frontend Development assignment at Brigham Young University - Idaho">
-     <!--Favicon-->
-    <link rel="icon" href="images/favicon.ico">
-    <!--normalize CSS reference-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!--stylesheets references-->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <!--fonts links-->
-     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap" rel="stylesheet">                                         
-          
- 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://github.com/KAYNALEDI/wdd230/blob/Week-1/week5/images/wee.jpeg?raw=true" type="icon">
-</head>
-                                                                                                                               
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  </head>                                          
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OAR CHAMBER SITE | Discovert</title>
+        <meta name="description" content="The gallery page. Pictures of pretty
+                    much anything to do with the covered areas...">
+        <link rel="icon" href="week9/images/favicon.ico">
+        <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+      
+      
+      <link href="css/base.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/base.css">
+        <!-- <link rel="stylesheet" href="css/medium.css"
+              media="(max-width: 1040px)">  -->
+        <!-- <link rel="stylesheet" href="css/small.css"
+              media="(max-width: 850px)"> -->
+        <link rel="stylesheet" href="css/tiny.css"
+              media="(max-width: 377px)">
+<!--fonts links-->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu:wght@700&display=swap" rel="stylesheet">                                         
 
-<body>
-    <div class="banner" id="banner" style="display: none">
-        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </div>
-    <div class="content">
+    <meta name="author" content="Nokwazi Kunene" />
+
+    <title>OAR CHAMBER SITE</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+              
+              
+    </head>
+    <body>
+        <div class="shadow-blocker-1"></div>
+        <div class="shadow-blocker-2"></div>
+        <div id="big-banner">
+            <i class="fa fa-bell"></i>
+            <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m..</span>
+            <i onclick="closeBanner()" class="fa fa-close"></i>
+        </div>
         <header>
-            <div class="logo">
-        <img src="https://github.com/KAYNALEDI/wdd230/blob/Week-1/week5/images/wee.jpeg?raw=true" alt="Website logo">
-            </div>
-            <div class="chamberName">
+            <div>
+                <!-- <img src="images/wee.jpeg" alt="header logo"> -->
                 <h1>Oar Chamber Services</h1>
-                <h2>Chamber of Commerce</h2>
-            </div> 
-            <div class="social">
-                <a href="https://twitter.com" target="blank"><img src="images/twitter.png" alt="Twitter Link"></a>
-                <a href="https://facebook.com" target="blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+                <span>Chamber of Commerce</span>
             </div>
-            <span id="date"></span>
-            <nav>
-                <button id="hamburguerButton"><span>&#9776;</span><span>X</span></button>
-                <ul id="navBar">
-                    <li><a href="index.html">Home</a></li>
+        </header>
+        <nav>
+            <ul>
+                <!-- <li class="toggler hide"><a onclick="toggleMenu()">&#9776; Menu</a></li>
+                <ul class="navigation"> -->
+
+                    <ul class="navigation">
+                    <li><a class="ham" href="#"></a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="https://kaynaledi.github.io/wdd230/week8/membership.html">Join</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                  </ul>
+        </nav>
+        <main>
+            <section class="gallery">
+                <h2>Discover Florida</h2>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="images/keys1.jpeg" alt="Placeholder">
+                    <figcaption>What a nice day!</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/sunset.jpeg" alt="Placeholder">
+                    <figcaption>Best place to watch the sunset<em>little</em> wet.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/keys.jpeg" alt="Placeholder">
+                    <figcaption>Want to explore the keys? Contact us! <em>so</em> pretty</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/images.jpeg" alt="Placeholder">
+                    <figcaption>Beauty all around</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/caption.jpeg" alt="Placeholder">
+                    <figcaption>Naples Botanical Garden is a 170-acre world-class garden paradise that features the plants and cultures of the tropics and subtropics between the latitudes of 26 degrees North and 26 degrees South including Brazil, the Caribbean, Southeast Asia, and Florida
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/playlinda" alt="Placeholder">
+                    <figcaption>Canaveral National Seashore's 24 miles (39 km) of shoreline is the longest stretch of undeveloped public beach on the east coast of Florida.
+                        The hours are from 6am to 6pm but can be closed if there is a launch scheduled. 
+                  </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/yatch.jpeg" alt="Placeholder">
+                    <figcaption>Florida has the best weather for all your water activities</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/dryt.jpeg" alt="Placeholder">
+                    <figcaption>The fort is the largest brick structure on the east coast. We were only able to tour a small portion as we wanted some beach/snorkel time. 
+                        There are a lot of unlit spiral stairs and brick walkways. The island can be reached by sea plane or private boat also.
+                     Bird and fish life is abundant, there is also a crocodiles! There was no cell service!  Wear comfortable footgear and stay hydrated!
+                         </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
+                        data-src="./images/kayak.jpeg" alt="Placeholder">
+                    <figcaption>The leisurely river tour is perfect for nature lovers, families, and photographers. With a completely clear frame, the kayak allows you to see any turtles, fish, or small alligators you pass over. 
+                        Listen to entertaining commentary on the surrounding flora and fauna and enjoy a few swimming opportunities, along the way. 
+                    </figcaption>
+                </figure>
+                <a href="./references.html">Photo references</a>
+            </section>
+            <section class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+                width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <h3>Contact Information</h3>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
+                        Catalonia Ave<span id="brk1"></span>
+                          Miami, Florida 22155</li>
+                      <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+                      <li><i class="fa-li fa fa-envelope"></i>
+                        info@OWS.com</li>
                 </ul>
-            </nav>
-        </header>
-                                                                                        
-   
-   
-        <body>
-                                                 
-        <section>
-            <h2>Target Audience:</h2>
-            <p>
-            <h3>Oar Chamber Services aims to serve public good by providing reliable and timely route estimates, climate and related information to travelers and explorers of all kinds.
-                We believe that there is nothing like traveling with the peace of mind that your trip has excursions that are timily and detailed. 
-                That is why we subscribe to the dry oar philosophy of plannning. We plan your trips and activities, allowing you to take time to breathe and explore the best of what Florida has to offer, Oar style.
-            </h3>
-            </p>
-        </section>                                   
-                                              
-                                              
-            <main class="discover-main">
-        <div class="discover-flex-small">
-            <div class="discover-module"><picture class="discover-pic">
-                <img src="images/placeholder.jpg" alt="destine" data-src="images/destin.jpeg">
-                </picture>
-                   <img src="images/placeholder-300x400.jpeg" data-src="images/destin.jpeg" alt="destin beach" 
-        width="300" height="300" style="display:block; margin:10px" />                                                                                            
-                                                                                                               
-                <p class="discover-caption">Aggieland Water Tower</p>
-            </div>
-                                   
-            <div class="discover_images">
-                <div class="images_small">
-                    <figure>
-                        <img src="images/salt_small.jpg" alt="">
-                        <figcaption>  </figcaption>
-                    </figure>
-                  
-                    <figure>
-                        <img src="images/dryt.jpeg" data-src="images/dryt.jpeg" alt="dryt">
-                        <figcaption>The fort is the largest brick structure on the east coast. We were only able to tour a small portion as we wanted some beach/snorkel time. 
-                       There are a lot of unlit spiral stairs and brick walkways. 
-                            The island can be reached by sea plane or private boat also.
-                    Bird and fish life is abundant, there is also a crocodiles! There was no cell service!  
-                                  Wear comfortable footgear and stay hydrated!
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/caption.jpeg" data-src="images/caption.jpeg">
-                        <figcaption>Naples Botanical Garden is a 170-acre world-class garden paradise that features the plants and cultures of the 
-                          tropics and subtropics between the latitudes of 26 degrees North and 26 degrees South including Brazil, the Caribbean, Southeast Asia, and Florida
-                        </figcaption>
-                    </figure>
-                        
-                      <figure>
-                        <img src="images/caption.png" data-src="images/food.png">
-                        <figcaption> Oar cuisine is probably one of the most unique and diverse in the world. The rich exchange of multicultural cuisines began when Ponce de León first staked a claim for Spain in 1513. 
-                                        Early Indigenous, Spanish, and European styles were significantly influenced by ingredients and flavors brought by the Africans in the sixteenth century, and by early Anglo-American settlers from regions north of Florida. </figcaption>
-                    </figure>                                                               
-                                                                                     
-                    <figure>
-                        <img src="images/playalinda.jpeg" data-src="images/playalinda.jpeg" alt="playalinda beach">
-                        <figcaption>Canaveral National Seashore's 24 miles (39 km) of shoreline is the longest stretch of undeveloped public beach on the east coast of Florida.
-                             The hours are from 6am to 6pm but can be closed if there is a launch scheduled. 
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/kayak.jpeg" data-src="images/kayak.jpeg" alt="kayak image">
-                        <figcaption>The leisurely river tour is perfect for nature lovers, families, and photographers. With a completely clear frame, the kayak allows you to see any turtles, fish, or small alligators you pass over. 
-                                     Listen to entertaining commentary on the surrounding flora and fauna and enjoy a few swimming opportunities, along the way. </figcaption>
-                    </figure>
-                    
-                      <figure>
-                        <img src="images/caption.jpeg" data-src="images/destin.jpeg">
-                        <figcaption> Stunning white beaches, emerald-hued waters, challenging golf, and world-famous fishing define Destin, Florida </figcaption>
-                    </figure>                                                                              
-                                                                                                   
-                                                                                                   
+                <div class="social-links">
+                    <a href="https://currents.google.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-google-plus-square"></i>Google Plus</a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-facebook-square"></i>Facebook</a>
+                    <a href="https://flickr.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-flickr"></i>Flickr</a>
                 </div>
-            </div>
-                                                                                       
-                                                                                        
-                                                                                        
-                                                                                        
-            
-
-        <section>
-            <h2>Personas:</h2>
-            <ul>
-                <p>
-                    <li><img src="images/Persona1.jpg" alt="persona1_image"> width="300" height="300" style="display:block; margin:10px"</li>
-                                                                           
-                </p>
-                <p>
-                    <li><img src="images/Persona2.jpeg" alt="persona2_image">width="300" height="300" style="display:block; margin:10px"</li>
-                </p>
-        </section>
-        <section>
-            <h2>Scenarios:</h2>
-
-            <h3>Scenario 1:</h3>
-            <p>
-            <h4>What is unique about OCS?</h4>
-            
-            Our company strives to generate a custom designed logistics network that exceeds the expectations and needs of our 
-            clients worldwide through the use of advanced software technology and trained professionals.                                                          
-            </p>
-            <h3>Scenario 2:</h3>
-            <p>
-            <h4>How do you ensure excellance in your industry?</h4>
-            
-            Thanks to our in-house specialized team, we are able to excel in the 
-            industry through our unique technology and innovative software design essential for efficiency in our field.
-            </p>
-            <h3>Scenario 3:</h3>
-            <p>
-            <h4>What services do you offer?</h4>
-    
-               Additionally, to provide you with the standard freight forwarding services such as 
-                inland, air, and ocean freight, our team of experts offers other services for your convenience. 
-            </p>
-        </section>                                                                              
-                                                                                                                                        </main>
-       
+            </section>
+        </main>
         <footer>
-            <div class="address">
-                <img src="https://github.com/KAYNALEDI/wdd230/blob/Week-1/week5/images/wee.jpeg?raw=true" alt="Website logo">
-           <p><strong>Oar Chamber Services</strong></p>
-                <p>564 Catalonia Ave</p>
-                <p>Miami, Florida</p> 
-                <p> 33155 </p>
-                <a href="https://goo.gl/maps/actBCRGs554eJtpA7" target="blank">🗺️ Location Map</a>                                               
-            </div>
-            <div class="contact">
-                <p>info@OWS.com</p>
-                <p>+(800)123-657-11</p>
-               
-            </div>                   
-        
-            <div class="myInfo">
-                <p> &copy;<span id="currentyear"></span>Oar Chamber Services </p>
+            &copy;<span id="currentyear"></span>Oar Chamber Services </p>
                 <p><strong> Nokwazi Kunene </strong> </p>
                 <p> WDD 230 Project </p>  
-                <p><span id="lastinfo">Last Modification: <span id="lastmodified"></span></span></p>
-               
-                    
-                </div>
-            </div>
+            <span class="current-date"></span> |
+           
         </footer>
-        <!-- java reference -->
-        <script src="js/index.js"></script>
-        <!-- <script src="js/windchill.js"></script> -->
-        <script src="js/lazyload.js" defer></script>
-        <script src="js/directory.js" defer></script>
-    </div> 
-</body>
-</html> 
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./js/scripts.js"></script>
+        <script src="./js/gallery-scrips.js"></script>
+    </body>
+</html>

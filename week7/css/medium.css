@@ -81,3 +81,7 @@
     
     
     } /* end of media query */
+    
+    body {
+      grid-template-columns: auto 90% auto;
+  }

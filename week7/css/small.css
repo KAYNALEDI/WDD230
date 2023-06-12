@@ -6,8 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 :root {
-    /* colors from my palette */
-
+    
     /* colors from the professional palette */
     --primary-color: #1e88e5;
     --secondary-color: #b2a5ca;
@@ -409,7 +408,7 @@ border-radius: 0.5em;
 }
 .spotlight h3 {
     margin: 0.3em;
-    color:black)
+    color:black;
 }
 .spotinfo {
 font-size: 0.8em;
@@ -860,4 +859,64 @@ div.social-links .fa-flickr:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* Discover Page Styles */
+.discover-main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .discover-module {
+    margin-bottom: 20px;
+  }
+  
+  .discover-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .discover-images figure {
+    margin: 0;
+  }
+  
+  .discover-images img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .discover-images figcaption {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles for Medium and Large Views */
+  @media screen and (min-width: 768px) {
+    .discover-module {
+      flex-basis: 30%;
+    }
+  
+    .discover-images {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .discover-module {
+      flex-basis: 20%;
+    }
+  
+    .discover-images {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
 
+  @media screen and (max-width: 1280px) {
+    section.gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    section.gallery figure:last-child {
+        grid-column: span 2;
+    }
+    section.events {
+        grid-template-columns: 1fr 1fr;
+    }}

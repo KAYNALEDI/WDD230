@@ -1,24 +1,31 @@
-const scriptureList = document.querySelector('ul');
-const input = document.querySelector('input');
-const button = document.querySelector('button');
+function addChapter() {
+    const chapter = document.querySelector("#favchap");
+    const favList = document.querySelector("#list");
 
-button.onclick = function () {
-    let scripture = input.value;
-    input.value = '';
+    const newLi = document.createElement("li");
+    newLi.textContent = chapter.value;
+    chapter.value = "";
 
-    const scriptureListItem = document.createElement('li');
-    const scriptureListText = document.createElement('span');
-    const scriptureListDelete = document.createElement('button');
+    const deleteBtn = document.createElement("input");
+    deleteBtn.setAttribute("type", "button");
+    deleteBtn.setAttribute("value", "X");
+    deleteBtn.setAttribute("class", "delete-button");
+    deleteBtn.addEventListener("click", delChapter);
 
-    scriptureListItem.appendChild(scriptureListText);
-    scriptureListText.textContent = scripture;
-    scriptureListItem.appendChild(scriptureListDelete);
-    scriptureListDelete.innerHTML = '&#10060;';
-    scriptureList.appendChild(scriptureListItem);
+    newLi.appendChild(deleteBtn);
+    favList.appendChild(newLi);
 
-    scriptureListDelete.onclick = function (e) {
-        scriptureList.removeChild(scriptureListItem);
-    }
-
-    input.focus();
+    chapter.focus()
 }
+
+function delChapter(self) {
+    const chapter = self.srcElement.parentElement;
+    chapter.remove();
+
+    const textElement = document.querySelector("#favchap");
+    textElement.focus();
+}
+
+
+const addButton = document.querySelector("#button");
+addButton.addEventListener("click", addChapter);

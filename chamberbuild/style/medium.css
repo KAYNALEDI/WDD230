@@ -1,0 +1,180 @@
+@media only screen and (min-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul a, header p {
+        font-size: 20px;
+    }
+
+    #hamButton {
+        font-size: 35px;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    .social-media {
+        max-width: 40px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    #banner {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    #hero {
+        grid-row: 2;
+        grid-column: 1/3;
+    }
+
+    #news {
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
+    #spotlight {
+        grid-row: 4;
+        grid-column: 1/3;
+        grid-template-columns: auto auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #join {
+        grid-row: 5;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #join a {
+        color: black;
+        background-color: #044389;
+        color: white;
+        margin: 5px;
+        margin-top: 20px;
+        padding: 15px 25%;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    #join a:hover {
+        background-color: #396ba5;
+    }
+
+    #join p {
+        margin: 5px;
+        margin-top: 10%;
+    }
+
+    #event {
+        grid-row: 6;
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #weather {
+        grid-row: 6;
+        max-width: 92%;
+        margin-left: 2%;
+    }
+
+    #weather picture img {
+        width: 80%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #class-info {
+        grid-column: 1/3;
+        justify-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #class-info h3 {
+        margin: 0px 5px;
+        padding: 0px 5px;
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    #class-info p#lastModified {
+        margin: 5px 25%;
+    }
+
+    footer img {
+        float: left;
+        max-width: 240px;
+    }
+
+    #main-info {
+        display: grid;
+        grid-template-columns: 250px auto;
+    }
+
+    #main-info p {
+        grid-column: 2;
+    }
+
+    #main-info img {
+        grid-row: 1/3;
+    }
+
+    #main-info h2 {
+        align-self: end;
+        font-size: 25px;
+    }
+
+    /* styling medium screen size for join page */
+
+    main form {
+        grid-column: 1/3;
+        width: 80%;
+    }
+
+    .gridView {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+
+    .gridView h3 {
+        font-size: 19px;
+    }
+
+    #businessDirectory {
+        grid-template-columns: auto;
+    }
+
+    .listView div {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .listView div p:nth-child(3), .listView div p:nth-child(4) {
+        display: block;
+        text-align: right;
+    }
+
+    .listView div p:nth-child(4) {
+        grid-column: 2;
+    }
+
+    .listView div p:nth-child(5) {
+        grid-row: 2;
+    }
+}

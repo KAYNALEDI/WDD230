@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Robert Lowry">
+        <meta name="description" content="Nokwazi Kunene in WDD 230: Web Frontend Developoment at BYUI">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>OAR CHAMBER SITE</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Provo<br>Chamber of Commerce</h1>
+            <picture>
+                <source srcset="images/Logo100.webp" media="(min-width:600px) and (max-width: 899px)">
+                <source srcset="images/Logo200.webp" media="(min-width: 900px)">
+                <img src="images/Logo70.webp" alt="Provo Chamber city design logo">
+            </picture>
+            <a href="https://www.facebook.com" class="social-media"  id="first-social-media">
+                <picture>
+                    <source srcset="images/FacebookLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="images/FacebookLogo-50.png" media="(min-width: 900px)">
+                    <img src="images/FacebookLogo-30.png" alt="Facebook logo">
+                </picture>
+            </a>
+            <a href="https://twitter.com" class="social-media">
+                <picture>
+                    <source srcset="images/TwitterLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="images/TwitterLogo-50.png" media="(min-width: 900px)">
+                    <img src="images/TwitterLogo-30.png" alt="Twitter logo">
+                </picture>
+            </a>
+            <nav>
+                <button id="hamButton">&#9776;</button>
+                <ul class="" id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+            <p id="currentDate"></p>
+        </header>
+        <main>
+            <section id="banner">
+                <p>🤝🏼Come join us for a Chamber meet and greet Wednesday at 7:00 pm!</p>
+            </section>
+            <div id="hero">
+                <h2>Welcome to Provo!</h2>
+                <input type="button" value="Join the Chamber">
+                <picture>
+                    <source srcset="images/wdd230-880.jpg" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="images/wdd230-780.jpg" media="(min-width: 900px)">
+                    <img src="images/wdd230-590.jpg" alt="small meeting of three people">
+                </picture>
+            </div>
+            <div id="event">
+                <h3>10 Year Anniversery!</h3>
+                <h4>Dry Bar Comedy</h4>
+                <p>Join us for the 10 year anniversery celebration of Dry Bar Comedy!
+                    <a href="#">more info</a>
+                </p>
+            </div>
+            <div id="weather">
+                <h3>Weather</h3>
+                <picture>
+                    <source srcset="images/rain-100.png" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="images/rain-130.png" media="(min-width: 900px)">
+                    <img src="images/rain-140.png" alt="weather symbol">
+                </picture>
+                <h4>46&deg;F</h4>
+                <p id="windSpeed">Wind Speed: 16 mph</p>
+                <p id="windChill">Wind Chill: N/A</p>
+            </div>
+            <div id="news">
+                <h3>New Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div id="join">
+                <a href="#">Join Us!</a>
+                <p>Discover how to join the Provo 
+                    Chamber of Commerce and learn 
+                    about how we can benefit your 
+                    organization!</p>
+            </div>
+            <div id="spotlight">
+                <section>
+                    <h3>Utah Valley Eye Center</h3>
+                    <picture>
+                        <source srcset="images/UVEClogo-320.png" media="(min-width:600px) and (max-width: 899px)">
+                        <source srcset="images/UVEClogo-290.png" media="(min-width: 900px)">
+                        <img src="images/UVEClogo-430.png" alt="Utah Valley Eye Center logo">
+                    </picture>
+                    <p>1+ (801) 357-7373 | <a href="https://utahvalleyeye.com">Website</a></p>
+                </section>
+                <section>
+                    <h3>Chick-fil-A</h3>
+                    <picture>
+                        <source srcset="images/Chick-fil-A_Logo-320.png" media="(min-width:600px) and (max-width: 899px)">
+                        <source srcset="images/Chick-fil-A_Logo-290.png" media="(min-width: 900px)">
+                        <img src="images/Chick-fil-A_Logo-430.png" alt="Chick-fil-A logo">
+                    </picture>
+                    <p>1+ (866) 232-2040 | <a href="https://www.chick-fil-a.com">Website</a></p>
+                </section>
+                <section>
+                    <h3>Color Me Mine</h3>
+                    <picture>
+                        <source srcset="images/colorMeMineLogo-320.png" media="(min-width:600px) and (max-width: 899px)">
+                        <source srcset="images/colorMeMineLogo-290.png" media="(min-width: 900px)">
+                        <img src="images/colorMeMineLogo-430.png" alt="Color Me Mine logo">
+                    </picture>
+                    <p>1+ (801) 434-4848 | <a href="https://provo.colormemine.com">Website</a></p>
+                </section>
+
+            </div>
+        </main>
+        <footer>
+            <div id="main-info">
+                <picture>
+                    <source srcset="images/Logo240.webp" media="(min-width:600px) and (max-width: 899px)">
+                    <source srcset="images/Logo270.webp" media="(min-width: 900px)">
+                    <img src="images/Logo180.webp" alt="Provo Chamber city design logo">
+                </picture>
+                <h2>Dry Oar</h2>
+                <p>546 Catalonia Ave
+                    <br>Miami, Florida 22155
+                </p>
+            </div>
+            <div id="secondary-info">
+                <p>info@OWS.com</p>
+                <p>(305) 323-6571</p>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+                &#128205; Location Map</a>
+            </div>
+            <div class="foot-info-box">
+                <div class="date">current date</div>
+                &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
+                    Online Learning| Last modification:
+                <span id="lastModified">last modified</span>
+              </div>
+                
+
+
+            
+              
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+                        width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  -->
+                               
+        </footer>         
+            
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/banner.js"></script>
+    </body>
+</html>

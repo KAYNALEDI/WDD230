@@ -13,6 +13,8 @@ header {
     font-size: 1.5rem;
 }
 
+
+
 .cards {
     display: grid;
     grid-gap: 2px;
@@ -32,7 +34,13 @@ section {
     background-color:  #b9a2a2;
     line-height: 0.5px;
     color: #333;
+    margin: 0 auto 5px auto;
+    border: 1px solid #985289;
+    width: 300px;
+
 }
+
+
 
 h2, img, p {
     align-self: center;

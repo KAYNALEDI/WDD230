@@ -1,24 +1,24 @@
-const scriptureList = document.querySelector('ul');
-const input = document.querySelector('input');
-const button = document.querySelector('button');
+const list = document.querySelector('ul');
+      const input = document.querySelector('input');
+      const button = document.querySelector('button');
 
-button.onclick = function () {
-    let scripture = input.value;
-    input.value = '';
+      button.addEventListener('click', () => {
+        const myItem = input.value;
+        input.value = '';
 
-    const scriptureListItem = document.createElement('li');
-    const scriptureListText = document.createElement('span');
-    const scriptureListDelete = document.createElement('button');
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
 
-    scriptureListItem.appendChild(scriptureListText);
-    scriptureListText.textContent = scripture;
-    scriptureListItem.appendChild(scriptureListDelete);
-    scriptureListDelete.innerHTML = '&#10060;';
-    scriptureList.appendChild(scriptureListItem);
+        listItem.appendChild(listText);
+        listText.textContent = myItem;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = 'X';
+        list.appendChild(listItem);
 
-    scriptureListDelete.onclick = function (e) {
-        scriptureList.removeChild(scriptureListItem);
-    }
+        listBtn.addEventListener('click', () => {
+          list.removeChild(listItem);
+        });
 
-    input.focus();
-}
+        input.focus();
+      });

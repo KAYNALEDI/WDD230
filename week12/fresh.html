@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bountiful Foods - Fresh</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Create Your Own Specialty Drink</h1>
+    <form id="drinkForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" required>
+      
+      <label for="fruit1">Fruit 1:</label>
+      <select id="fruit1">
+        <!-- Dynamically populated options -->
+      </select>
+      
+      <label for="fruit2">Fruit 2:</label>
+      <select id="fruit2">
+        <!-- Dynamically populated options -->
+      </select>
+      
+      <label for="fruit3">Fruit 3:</label>
+      <select id="fruit3">
+        <!-- Dynamically populated options -->
+      </select>
+      
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions"></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="outputArea"></div>
+  </div>
+
+  <footer>
+    <p>&copy; Bountiful Foods. Last modified: <span id="lastModified"></span></p>
+    <a href="attribution.html">Attribution</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -19,6 +19,39 @@
   
     #navbar {
       display: flex;
+      max-width: 100%;
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background: linear-gradient(to right,#446468 ,#354f52,#203031, #283536,#1b2122);
+    }
+    nav ul li a {
+      line-height: 1;
+      padding: 1rem;
+      border: 1px solid #ffff;
+      font-size: 1rem;
+      text-align: center;
+      border: none;
+      color: #ffff;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #025eb8;
+      background-color: rgba(255,255,255,.5);
+    }
+    nav ul li a:active {
+      background-color: #709f88;
+      color: #025eb8;
+    }
+    nav ul li a:focus {
+      background-color: #709f88;
+      color: #025eb8;
+    }
+    nav ul li a:focus-visible {
+      background-color: #709f88;
+      color: #025eb8;
     }
   
     .main {

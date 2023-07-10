@@ -9,6 +9,57 @@
   box-sizing: border-box;
 }
 
+.shadow-blocker-1,
+.shadow-blocker-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+}
+
+#big-banner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  display: none;
+}
+
+#big-banner i {
+  float: right;
+  cursor: pointer;
+  color: #888;
+}
+
+#big-banner span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#big-banner span i {
+  margin-right: 5px;
+}
+
+
+
+.show-banner {
+  display: block;
+}
+
+.hide-banner {
+  display: none;
+}
+
+
 body header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;

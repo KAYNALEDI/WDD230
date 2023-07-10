@@ -285,6 +285,112 @@ h1 {
   font-size: 20px;
   color: #264a41;
 }
+footer .date{
+margin-bottom: 0.5em;
+margin-top: 0;
+}
 
+footer {
+    background-image: linear-gradient to right,  #B9A2A2;
+  
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 1px solid rgba(41, 41, 41, 0.233);
+}
+
+.foot-logo-box {
+    display: block;
+    padding: 1.5em;
+
+}
+.foot-info-box {
+    padding: 1em;
+    background-color: var(--section-background-color);
+    padding-bottom: 1.6em;
+}
+section {
+    padding: 0 1em;
+}
+div.place-holder {
+    padding: 1rem;
+    background-color: #eee;
+    border: dashed 1px var(--default-dark);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+section.contact-info {
+    position: relative;
+    left: -1rem;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    background-color: var(--default-dark);
+    grid-template-columns: 50% auto;
+    box-shadow: 0 0 10px var(--default-dark);
+}
+section.contact-info iframe {
+    width: 90%;
+    height: 200px;
+    grid-column: 1;
+    grid-row: span 3;
+    border: 0;
+}
+section.contact-info h3, section.contact-info ul {
+    margin-top: 0;
+    color: var(--default-light);
+}
+section.contact-info ul {
+    margin-bottom: 0;
+}
+section.contact-info li {
+    padding-top: 3px;
+}
+section.contact-info li i {
+    transition: transform 0.5s, color 0.3s;
+}
+section.contact-info li:hover i {
+    color: var(--main-color);
+    transform: scale(1.5);
+}
+section.contact-info div.social-links {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,50px);
+    justify-items: center;
+    align-items: flex-start;
+    padding-left: 35px;
+}
+div.social-links a {
+    width: 36px;
+    height: 37px;
+    overflow: hidden;
+}
+div.social-links .fa-google-plus-square,
+div.social-links .fa-facebook-square,
+div.social-links .fa-flickr {
+    color: var(--default-light);
+    transition: transform 0.5s;
+    font-size: 40px;
+}
+div.social-links .fa-google-plus-square:hover {
+    cursor: pointer;
+    color: tomato;
+}
+div.social-links .fa-facebook-square:hover {
+    cursor: pointer;
+    color: royalblue;
+}
+div.social-links .fa-flickr:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, royalblue, deeppink);
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 

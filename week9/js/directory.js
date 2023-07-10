@@ -1,6 +1,5 @@
 
-// JavaScript code
-// Sample data for the directory (you can replace it with your own data)
+
 var companies = [
   {
       name: "Wynwood Brewing Company",
@@ -71,10 +70,25 @@ var companies = [
       phone: "(305) 442-4408",
       website: "https://booksandbooks.com/",
       activities: ["Author Readings", "Book Signings"]
-  }
+  },
+  {
+      name: "Candle Land",
+      address: "154 Giralda Ave, Coral Gables, FL 33134",
+      phone: "(305)-397-8471",
+      website: "https://www.candlelandmiami.com/",
+      activities: ["Candle Making", "Scent Pairings"]
+  },
+  {
+      name: "Miami Water Sports",
+      address: "50 NW 23rd St, Miami, FL 33127",
+      phone: "(305) 639-8501",
+      website: "https://www.miamiwatersports.com/",
+      activities: ["Sunrise/Sunset Cruise", "Jet-Skiing and Paddleboard"]
+  },
+  
 ];
 
-// Function to generate the HTML for each company item in list view
+
 function generateCompanyItem(company) {
   var activities = company.activities.map(function(activity) {
       return `<li>${activity}</li>`;
@@ -110,7 +124,7 @@ function generateCompanyCard(company) {
   `;
 }
 
-// Function to populate the company list
+// populate the company list
 function populateCompanyList() {
   var companyList = document.getElementById("company-list");
   var companyItems = "";
@@ -134,7 +148,7 @@ function populateCompanyGrid() {
   companyGrid.innerHTML = companyCards;
 }
 
-// Function to switch between list and grid views
+// switch between list and grid views
 function switchView(view) {
   var listViewBtn = document.getElementById("list-view-btn");
   var gridViewBtn = document.getElementById("grid-view-btn");
@@ -154,6 +168,6 @@ function switchView(view) {
   }
 }
 
-// Call the function to populate the company list and grid
+//  populate the company list and grid
 populateCompanyList();
 populateCompanyGrid();

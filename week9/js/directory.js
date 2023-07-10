@@ -81,7 +81,7 @@ var companies = [
   {
       name: "Miami Water Sports",
       address: "50 NW 23rd St, Miami, FL 33127",
-      phone: "(305) 639-8501",
+      phone: "(786)-713-8006",
       website: "https://www.miamiwatersports.com/",
       activities: ["Sunrise/Sunset Cruise", "Jet-Skiing and Paddleboard"]
   },

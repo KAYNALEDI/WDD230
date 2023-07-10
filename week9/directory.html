@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Directory </title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/large.css">
+  <link rel="stylesheet" type="text/css" href="style/medium.css">
+  <link rel="stylesheet" type="text/css" href="style/normalize.css">
+  <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    
+  </style>
+</head>
+
+<body>
+    <div class="shadow-blocker-1"></div>
+    <div class="shadow-blocker-2"></div>
+    <div id="big-banner">
+        <i class="fa fa-bell"></i>
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m..</span>
+        <i onclick="closeBanner()" class="fa fa-close"></i>
+    </div>
+  <header>
+    <div id="logo_link">
+      <!-- Add logo here -->
+      <img id="logo"
+      class="logoHeader"
+      src="./images/wee.jpeg"
+         alt="keys pic" /> 
+    <h1> Oar Chamber Services</h1>
+
+  </header>
+
+  <div class="header-today">
+    <p class="date"></p>
+
+  </div>
+    <nav>
+      <ul id = "navbar">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./discovery.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    
+         <h1>Miami Travel Company Directory</h1>
+    <div class="directory-container">
+        <div class="view-options">
+            <button id="list-view-btn" class="active" onclick="switchView('list')">List View</button>
+            <button id="grid-view-btn" onclick="switchView('grid')">Grid View</button>
+        </div>
+        <ul class="company-list" id="company-list">
+           
+        </ul>
+        <div class="company-grid" id="company-grid">
+          
+        </div>
+    </div>
+
+    <script src="script.js"></script>  </div>
+      </main>
+      <footer>
+        <div class="infoM">
+          <div id="logo_footer">
+           
+          </div>
+          <div class="info">
+            <h5>Contact Information</h5>
+            <p>Phone: (305) 323-6571</p>
+            <p>Email: info@OWS.com</p>
+          </div>
+          <div class="contact">
+            <h5>Follow Us</h5>
+            <a id="fb" href="#" target="_blank">
+              <img src="facebook_icon.png" alt="Facebook">
+            </a>
+            <a id="insta" href="#" target="_blank">
+              <img src="instagram_icon.png" alt="Instagram">
+            </a>
+          </div>
+          <div class="address">
+            <h5>Address</h5>
+            <p>564th Catalonia Ave Miami, Florida 22155</p>
+            <a target="_blank"
+            id="map"
+            href="https://www.google.com/maps/place/564+Catalonia+Ave,+Coral+Gables,+FL+33134/@25.74387,-80.266153,16z/data=!4m5!3m4!1s0x88d9b792009bee03:0x81d714e694aca60e!8m2!3d25.7438702!4d-80.2661529?hl=en&entry=ttu">
+        </a>
+          </div>
+        </div>
+    
+        <div class="date">current date</div>
+            &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
+                Online Learning| Last modification:
+            <span id="modified">last modified</span>
+          </div>
+          <script src="js/directory.js"></script>
+          <script src="scripts/directory.js"></script>
+          <script type="module" src="js/weatherapi.js"></script>
+        
+      </footer>
+    </body>
+    
+    </html>

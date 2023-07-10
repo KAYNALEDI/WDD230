@@ -1,180 +1,189 @@
-@media only screen and (min-width: 600px) {
-    header h1 {
-        font-size: 30px;
-    }
 
-    nav ul a, header p {
-        font-size: 20px;
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    body {
+      background-color: var(--bg-color);
+      font-family: "Montserrat";
     }
-
-    #hamButton {
-        font-size: 35px;
+    .main {
+      display: grid;
+      grid-template-areas:
+        "m1 m1 m1"
+        "m2 m2 m2"
+        "m3 m3 m3"
+        "m4 m4 m4"
+        "m5 m5 m6";
     }
-
-    header img {
-        max-width: 100px;
+    #section-a {
+      grid-area: m1;
+      position: relative;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     }
-
-    .social-media {
-        max-width: 40px;
+    #section-b {
+      grid-area: m5;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     }
-
-    main {
-        display: grid;
-        grid-template-columns: 70% 30%;
+    #section-c {
+      display: grid;
+      grid-area: m6;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     }
-
-    #banner {
-        grid-column: 1/3;
-        grid-row: 1;
+    #section-d {
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      grid-area: m2;
     }
-
-    #hero {
-        grid-row: 2;
-        grid-column: 1/3;
+    #section-e {
+        grid-area: s1;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+    
+      #section-f {
+        grid-area: s2;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+    #section-j {
+      grid-area: m4;
+      position: relative;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     }
-
-    #news {
-        grid-row: 3;
-        grid-column: 1/3;
+    #spotlights {
+      grid-area: m3;
+      display: flex;
+      display: grid;
+      margin: 0.5rem;
+      grid-template-areas: "s1 s2";
     }
-
-    #spotlight {
-        grid-row: 4;
-        grid-column: 1/3;
-        grid-template-columns: auto auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
+   
+    #hamburger-menu {
+      display: inline;
     }
-
-    #join {
-        grid-row: 5;
-        grid-column: 1/3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    #welcome {
+      font-size: 22px;
+      padding: 1rem;
+      top: 6%;
+      width: fit-content;
+      left: 25%;
+      color: #264a41;
     }
-
-    #join a {
-        color: black;
-        background-color: #044389;
-        color: white;
-        margin: 5px;
-        margin-top: 20px;
-        padding: 15px 25%;
-        border-radius: 4px;
-        text-decoration: none;
+    .join {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      background-color: var(--bg-color);
+      color: #053c5e;
+      font-size: 1.5em;
+      padding: 10px 10px;
+      border-radius: 5px;
+      margin: 0;
+      position: absolute;
+      top: 90%;
+      left: 80%;
+      align-content: center;
+      font-family: "Raleway";
     }
-
-    #join a:hover {
-        background-color: #396ba5;
+  
+    .start {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      background-color: var(--bg-color);
+      color: #053c5e;
+      font-size: 1.5em;
+      padding: 10px 10px;
+      border-radius: 5px;
+      margin: 0;
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      align-content: center;
+      font-family: "Raleway";
     }
-
-    #join p {
-        margin: 5px;
-        margin-top: 10%;
+    .join:hover {
+      background-color: #db4c40;
+      color: white;
     }
-
-    #event {
-        grid-row: 6;
-        width: 95%;
-        margin-left: 2%;
-        margin-right: 2%;
+    .start:hover {
+      background-color: #db4c40;
+      color: white;
     }
-
+  
+    .images:hover {
+      border-radius: 20%;
+    }
+    .main-form {
+      align-content: center;
+      background-color: var(--bg-color);
+      padding: 40px;
+      margin-top: -14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 1000px;
+      grid-gap: 20px;
+    }
+    .grid-1 {
+      display: grid;
+      grid-area: 1/1;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+    }
+    .membership {
+      display: grid;
+      grid-area: 1/2;
+  
+    }
+    .font {
+      font-size: 18px;
+    }
+    #stats {
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 3%;
+    }
+    .discover {
+      margin: 3%;
+    }
+    .directory-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      grid-gap: 20px;
+      width: 850px;
+    }
     #weather {
-        grid-row: 6;
-        max-width: 92%;
-        margin-left: 2%;
+      max-width: 175px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
     }
-
-    #weather picture img {
-        width: 80%;
+    .member-2 {
+      font-size: 16px;
     }
-
-    footer {
-        display: grid;
-        grid-template-columns: auto auto;
+    .imgthank img {
+      width: 600px;
     }
-
-    #class-info {
-        grid-column: 1/3;
-        justify-self: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .contact2 {
+      padding: 4vw;
+      width: 600px;
     }
-
-    #class-info h3 {
-        margin: 0px 5px;
-        padding: 0px 5px;
-        border-left: 1px solid;
-        border-right: 1px solid;
+    .logo_foot {
+      grid-area: logo;
+      width: 100px;
     }
-
-    #class-info p#lastModified {
-        margin: 5px 25%;
+    .logom {
+      width: 50px
     }
-
-    footer img {
-        float: left;
-        max-width: 240px;
+    .contact2{
+      padding: 2vw;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
-
-    #main-info {
-        display: grid;
-        grid-template-columns: 250px auto;
+    .Address-h1{
+      text-align: center;
     }
-
-    #main-info p {
-        grid-column: 2;
+    .contact3{
+      width: 400px;
     }
-
-    #main-info img {
-        grid-row: 1/3;
-    }
-
-    #main-info h2 {
-        align-self: end;
-        font-size: 25px;
-    }
-
-    /* styling medium screen size for join page */
-
-    main form {
-        grid-column: 1/3;
-        width: 80%;
-    }
-
-    .gridView {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    }
-
-    .gridView h3 {
-        font-size: 19px;
-    }
-
-    #businessDirectory {
-        grid-template-columns: auto;
-    }
-
-    .listView div {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .listView div p:nth-child(3), .listView div p:nth-child(4) {
-        display: block;
-        text-align: right;
-    }
-
-    .listView div p:nth-child(4) {
-        grid-column: 2;
-    }
-
-    .listView div p:nth-child(5) {
-        grid-row: 2;
-    }
-}
+    
+  }

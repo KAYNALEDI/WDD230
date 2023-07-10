@@ -1,138 +1,183 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Nokwazi Kunene">
-        <meta name="description" content ="Join| wdd230 chamber of commerce assignment">
-        <title>OAR Chamber Site | Join</title>
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    </head>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/large.css">
+  <link rel="stylesheet" type="text/css" href="style/medium.css">
+  <link rel="stylesheet" type="text/css" href="style/normalize.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+    /* Add the CSS styles here */
+  </style>
+</head>
+
+<body>
+    <div class="shadow-blocker-1"></div>
+    <div class="shadow-blocker-2"></div>
+    <div id="big-banner">
+        <i class="fa fa-bell"></i>
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m..</span>
+        <i onclick="closeBanner()" class="fa fa-close"></i>
+    </div>
+  <header>
+    <div id="logo_link">
+      <!-- Add your logo here -->
+      <img id="logo"
+      class="logoHeader"
+      src="./images/wee.jpeg"
+         alt="keys pic" /> 
+    <h1> Oar Chamber Services</h1>
+
+  </header>
+
+  <div class="header-today">
+    <p class="date"></p>
+    <button id = "hamburger-menu">
+        <span id ="menu-closed">&equiv; </span>
+        <span class="material-symbols-outlined" id="menu-open"> </span>
+    </button>
+  </div>
+    <nav>
+      <ul id = "navbar">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./discovery.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href=".contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
     <body>
-        <header>
-            <h1>Provo<br>Chamber of Commerce</h1>
-            <picture>
-                <source srcset="images/Logo100.webp" media="(min-width:600px) and (max-width: 899px)">
-                <source srcset="images/Logo200.webp" media="(min-width: 900px)">
-                <img src="images/Logo70.webp" alt="Provo Chamber city design logo">
-            </picture>
-            <a href="https://www.facebook.com" class="social-media"  id="first-social-media">
-                <picture>
-                    <source srcset="images/FacebookLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/FacebookLogo-50.png" media="(min-width: 900px)">
-                    <img src="images/FacebookLogo-30.png" alt="Facebook logo">
-                </picture>
-            </a>
-            <a href="https://twitter.com" class="social-media">
-                <picture>
-                    <source srcset="images/TwitterLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/TwitterLogo-50.png" media="(min-width: 900px)">
-                    <img src="images/TwitterLogo-30.png" alt="Twitter logo">
-                </picture>
-            </a>
-            <nav>
-                <button id="hamButton">&#9776;</button>
-                <ul class="" id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="join.html">Join Us</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                </ul>
-            </nav>
-            <p id="currentDate"></p>
-        </header>
-        <main id="joinPage">
-            <form method="get" action="thankyou.html">
-                <h2>Personal/Business Information</h2>
-                <label class="top">First Name* <input type="text" name="fname" required autofocus></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Position <input type="text" name="businessPosition" pattern="[A-Za-z0-9\-\s]{7,}"></label>
-                <label class="top">Email* <input type="email" name="email" required placeholder="email@example.com"></label>
-                <label class="top">Cell Number* <input type="tel" name="tel" required placeholder="1235551234"></label>
-                <label class="top">Business Name* <input type="text" name="businessName" required></label>
-                <label class="top">Business Description<textarea name="businessDescription" rows="10"></textarea></label>
-
-                <h2>Membership Level</h2>
-                <fieldset>
-                    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                </fieldset>
-                <input type="hidden" name="dateTime">
-                <input type="submit" name="submit" value="Join the Chamber!" class="submitBtn">
-            </form>
-            <table>
-                <tr>
-                    <th>Features</th>
-                    <th>Bronze</th>
-                    <th>Silver</th>
-                    <th>Gold</th>
-                    <th>NP</th>
-                </tr>
-                <tr>
-                    <td>Events</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="notChecked">X</td>
-                </tr>
-                <tr>
-                    <td>Training</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                </tr>
-                <tr>
-                    <td>Discounted Training</td>
-                    <td class="notChecked">X</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                </tr>
-                <tr>
-                    <td>Home Page Highlights</td>
-                    <td class="notChecked">X</td>
-                    <td class="notChecked">X</td>
-                    <td class="checked">&#10004;</td>
-                    <td class="checked">&#10004;</td>
-                </tr>
-            </table>
-        </main>
-        <footer>
-            <div id="main-info">
-                <picture>
-                    <source srcset="images/Logo240.webp" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/Logo270.webp" media="(min-width: 900px)">
-                    <img src="images/Logo180.webp" alt="Provo Chamber city design logo">
-                </picture>
-                <h2>Provo Chamber of Commerce</h2>
-                <p>address line 1
-                    <br>address line 2
-                </p>
+        <h1>Membership Registaration Form</h1>
+        <div class="containerjoin">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
             </div>
-            <div id="secondary-info">
-                <p>chamber@provo.org</p>
-                <p>+1 (801) 123-4567</p>
-                <a href="https://www.google.com/maps/place/466+W+4800+N,+Provo,+UT+84604/@40.2981684,-111.6648814,18.5z/data=!4m6!3m5!1s0x874d90098b16208b:0x24422afe68b9baf9!8m2!3d40.2982581!4d-111.6651829!16s%2Fg%2F11nm_r7dlm">
-                    &#128205; Location Map</a>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
             </div>
-            <div id="class-info">
-                <p id="copyright"></p>
-                <h3>Robert Lowry</h3>
-                <p>WDD 230 Project</p>
-                <p id="lastModified"></p>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
             </div>
-        </footer>
-
-        <script src="scripts/script.js"></script>
-    </body>
-</html>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="qualification" required >Membership:</label>
+                </div>
+                <div class="col-90">
+                    <select name="qualification" id="membership">
+                        <option value=" ">Select Membership:</option>
+                        <option value="NP Member">NP Membership</option>                 
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver.">Silver</option>
+                        <option value="Gold">Gold</option>
+                      
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="specialization">Specialization:</label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Volunteer">Volunteer<br/>
+                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Student">Student<br/>
+                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Press">Press<br/>
+                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Investor">Investor<br/>
+                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Other">Other<br/>                                                                                              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="8">
+                </div>
+            </div>
+            <div class="row">
+                
+               <button type="submit" onClick=<li><a href="./thankyou.html"</a></li>Submit</submit-button>                                                                       
+            </div>  
+        </div>  
+  
+    </main>

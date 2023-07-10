@@ -1,171 +1,163 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Robert Lowry">
-        <meta name="description" content="Nokwazi Kunene in WDD 230: Web Frontend Developoment at BYUI">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <title>OAR CHAMBER SITE</title>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>Provo<br>Chamber of Commerce</h1>
-            <picture>
-                <source srcset="images/Logo100.webp" media="(min-width:600px) and (max-width: 899px)">
-                <source srcset="images/Logo200.webp" media="(min-width: 900px)">
-                <img src="images/Logo70.webp" alt="Provo Chamber city design logo">
-            </picture>
-            <a href="https://www.facebook.com" class="social-media"  id="first-social-media">
-                <picture>
-                    <source srcset="images/FacebookLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/FacebookLogo-50.png" media="(min-width: 900px)">
-                    <img src="images/FacebookLogo-30.png" alt="Facebook logo">
-                </picture>
-            </a>
-            <a href="https://twitter.com" class="social-media">
-                <picture>
-                    <source srcset="images/TwitterLogo-40.png" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/TwitterLogo-50.png" media="(min-width: 900px)">
-                    <img src="images/TwitterLogo-30.png" alt="Twitter logo">
-                </picture>
-            </a>
-            <nav>
-                <button id="hamButton">&#9776;</button>
-                <ul class="" id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="join.html">Join Us</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                </ul>
-            </nav>
-            <p id="currentDate"></p>
-        </header>
-        <main>
-            <section id="banner">
-                <p>🤝🏼Come join us for a Chamber meet and greet Wednesday at 7:00 pm!</p>
-            </section>
-            <div id="hero">
-                <h2>Welcome to Provo!</h2>
-                <input type="button" value="Join the Chamber">
-                <picture>
-                    <source srcset="images/wdd230-880.jpg" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/wdd230-780.jpg" media="(min-width: 900px)">
-                    <img src="images/wdd230-590.jpg" alt="small meeting of three people">
-                </picture>
-            </div>
-            <div id="event">
-                <h3>10 Year Anniversery!</h3>
-                <h4>Dry Bar Comedy</h4>
-                <p>Join us for the 10 year anniversery celebration of Dry Bar Comedy!
-                    <a href="#">more info</a>
-                </p>
-            </div>
-            <div id="weather">
-                <h3>Weather</h3>
-                <picture>
-                    <source srcset="images/rain-100.png" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/rain-130.png" media="(min-width: 900px)">
-                    <img src="images/rain-140.png" alt="weather symbol">
-                </picture>
-                <h4>46&deg;F</h4>
-                <p id="windSpeed">Wind Speed: 16 mph</p>
-                <p id="windChill">Wind Chill: N/A</p>
-            </div>
-            <div id="news">
-                <h3>New Release</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div id="join">
-                <a href="#">Join Us!</a>
-                <p>Discover how to join the Provo 
-                    Chamber of Commerce and learn 
-                    about how we can benefit your 
-                    organization!</p>
-            </div>
-            <div id="spotlight">
-                <section>
-                    <h3>Utah Valley Eye Center</h3>
-                    <picture>
-                        <source srcset="images/UVEClogo-320.png" media="(min-width:600px) and (max-width: 899px)">
-                        <source srcset="images/UVEClogo-290.png" media="(min-width: 900px)">
-                        <img src="images/UVEClogo-430.png" alt="Utah Valley Eye Center logo">
-                    </picture>
-                    <p>1+ (801) 357-7373 | <a href="https://utahvalleyeye.com">Website</a></p>
-                </section>
-                <section>
-                    <h3>Chick-fil-A</h3>
-                    <picture>
-                        <source srcset="images/Chick-fil-A_Logo-320.png" media="(min-width:600px) and (max-width: 899px)">
-                        <source srcset="images/Chick-fil-A_Logo-290.png" media="(min-width: 900px)">
-                        <img src="images/Chick-fil-A_Logo-430.png" alt="Chick-fil-A logo">
-                    </picture>
-                    <p>1+ (866) 232-2040 | <a href="https://www.chick-fil-a.com">Website</a></p>
-                </section>
-                <section>
-                    <h3>Color Me Mine</h3>
-                    <picture>
-                        <source srcset="images/colorMeMineLogo-320.png" media="(min-width:600px) and (max-width: 899px)">
-                        <source srcset="images/colorMeMineLogo-290.png" media="(min-width: 900px)">
-                        <img src="images/colorMeMineLogo-430.png" alt="Color Me Mine logo">
-                    </picture>
-                    <p>1+ (801) 434-4848 | <a href="https://provo.colormemine.com">Website</a></p>
-                </section>
+<html>
 
-            </div>
-        </main>
-        <footer>
-            <div id="main-info">
-                <picture>
-                    <source srcset="images/Logo240.webp" media="(min-width:600px) and (max-width: 899px)">
-                    <source srcset="images/Logo270.webp" media="(min-width: 900px)">
-                    <img src="images/Logo180.webp" alt="Provo Chamber city design logo">
-                </picture>
-                <h2>Dry Oar</h2>
-                <p>546 Catalonia Ave
-                    <br>Miami, Florida 22155
-                </p>
-            </div>
-            <div id="secondary-info">
-                <p>info@OWS.com</p>
-                <p>(305) 323-6571</p>
-                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
-                &#128205; Location Map</a>
-            </div>
-            <div class="foot-info-box">
-                <div class="date">current date</div>
-                &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
-                    Online Learning| Last modification:
-                <span id="lastModified">last modified</span>
-              </div>
-                
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/large.css">
+  <link rel="stylesheet" type="text/css" href="style/medium.css">
+  <link rel="stylesheet" type="text/css" href="style/normalize.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+    /* Add the CSS styles here */
+  </style>
+</head>
 
+<body>
+  <header>
+    <div id="logo_link">
+      <!-- Add your logo here -->
+      <img id="logo"
+      class="logoHeader"
+      src="./images/wee.jpeg"
+         alt="keys pic" /> 
+    <h1> Oar Chamber Services</h1>
 
-            
+  </header>
+
+  <div class="header-today">
+    <p class="date"></p>
+    <button id = "hamburger-menu">
+        <span id ="menu-closed">&equiv; </span>
+        <span class="material-symbols-outlined" id="menu-open"> </span>
+    </button>
+  </div>
+    <nav>
+      <ul id = "navbar">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./discovery.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href=".contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  
+
+  <div class="main">
+    <div id="section-a" class="dot">
+         <!-- Content for section a -->
+        <h4 id ="welcome">Welcome to Miami</h4> 
+        <img id="landscape"
+        src="./images/keys.jpeg"
+        alt="keys pic" /> 
+        
+      <a class="join" target="_blank" href="./join.html">JOIN US</a>
+    
+    </div>
+
+    <div id="section-b" class="dot">
+      <!-- Content for section b -->
+
+<p>Our agency is dedicated to showcasing the vibrant culture, stunning beaches, and exciting attractions that Miami has to offer. We believe in curating tailor-made experiences that immerse you in the local lifestyle and provide authentic encounters with the city's hidden gems. Whether you're seeking adventure, relaxation, or cultural exploration, our team of knowledgeable professionals is committed to crafting your dream vacation in Miami.</p>
+
+    </div>
+
+    <div id="section-c" class="dot">
+      <!-- Content for section c -->
+      <h2>Weather </h2>
+      <img id="weather" src="./images/we.jpeg" alt="weather"
+      <p id="forecast"></p>
+      <p>The weather in Miami, Florida:
+        <span id="current-temp"></span> &deg;F
+      </p>
+      <p>Wind Speed: <span id="windspeed">?</span>mph</p>
+      <p>Wind Chill: <span id="windchill">?</span>&deg; F</p></p>
+    </div>
+
+    <div id="section-d" class="dot">
+      <!-- Content for section d -->
+      <h2>Miami Adventures Wins "Best Travel Agency" Award
+    </h2>
+      <p id="news">
+        Miami Herald 1 day ago
+                Miami Adventures is proud to announce that we have been awarded the prestigious "Best Travel Agency" award by the Miami Herald. This recognition reflects our commitment to providing exceptional service and unforgettable experiences for our valued clients. We would like to express our gratitude to all our customers who have made this achievement possible.
               
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
-                        width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  -->
-                               
-        </footer>         
-            
+      </p>
+    </div>
+    <!-- <div id="section-e" class="dot">
+      <!-- Content for section e -->
+    </div> 
+    <div id="spotlights" class="dot">
+         <!-- Content for spotlight 2 -->
+         <img id="landscape"
+         src="./images/food.webp"
+         alt="keys pic" /> 
+    </div>
 
-        <script src="scripts/script.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/banner.js"></script>
-    </body>
+      <!-- <div id="section-f" class="dot">
+        <!-- Content for spotlight 1 -->
+      <!-- </div>
+      <div id="section-g" class="dot">
+        <!-- Content for spotlight 2 -->
+      <!-- </div> --> 
+      
+      <div id="section-j" class="dot">
+        <!-- Content for section-j -->
+        <p> Our company strives to generate a custom designed logistics network that exceeds the expectations and needs of our clients worldwide through the use of advanced software technology and trained professionals.</p>
+      </div>
+
+
+      </div>
+     
+    </div>
+  </div>
+
+  <footer>
+    <div class="infoM">
+      <div id="logo_footer">
+        <!-- Add your footer logo here -->
+      </div>
+      <div class="info">
+        <h5>Contact Information</h5>
+        <p>Phone: (305) 323-6571</p>
+        <p>Email: info@OWS.com</p>
+      </div>
+      <div class="contact">
+        <h5>Follow Us</h5>
+        <a id="fb" href="#" target="_blank">
+          <img src="facebook_icon.png" alt="Facebook">
+        </a>
+        <a id="insta" href="#" target="_blank">
+          <img src="instagram_icon.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="address">
+        <h5>Address</h5>
+        <p>564th Catalonia Ave Miami, Florida 22155</p>
+        <a target="_blank"
+        id="map"
+        href="https://www.google.com/maps/place/564+Catalonia+Ave,+Coral+Gables,+FL+33134/@25.74387,-80.266153,16z/data=!4m5!3m4!1s0x88d9b792009bee03:0x81d714e694aca60e!8m2!3d25.7438702!4d-80.2661529?hl=en&entry=ttu">
+    </a>
+      </div>
+    </div>
+
+    <div class="date">current date</div>
+        &copy; <span id="year">year</span> &bull;  &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
+            Online Learning| Last modification:
+        <span id="modified">last modified</span>
+      </div>
+      <script src="js/chamber-script.js"></script>
+      <script src="js/highlight-script.js"></script>
+      <script type="module" src="js/weatherapi.js"></script>
+    
+  </footer>
+</body>
+
 </html>

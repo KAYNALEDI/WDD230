@@ -1,75 +1,317 @@
-*{box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+:root {
+  --bg-color: #fff9eb;
 }
-input[type=text], input[type=email], input[type=number], input[type=select], input[type=date],input[type=select],input[type=password], input[type=tel]
-{
-    width: 45%;
-    padding: 12px;
-    border: 1px solid rgb(168, 166, 166);
-    border-radius: 4px;
-    resize: vertical;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-textarea{
-    width:45%;
-    padding: 12px;
-    border: 1px solid rgb(168, 166, 166);
-    border-radius: 4px;
-    resize: vertical;
+
+.shadow-blocker-1,
+.shadow-blocker-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
 }
-input[type=radio],input[type=checkbox]{
-    width: 1%;
-    padding-left: 0%;
-    border: 1px solid rgb(168, 166, 166);
-    border-radius: 4px;
-    resize: vertical;
+
+#big-banner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  display: none;
 }
-h1{
-    font-family: Arial;
-    font-size: medium;
-    font-style: normal;
-    font-weight: bold;
-    color: brown;
-    text-align: center;
-    text-decoration: underline;
+
+#big-banner i {
+  float: right;
+  cursor: pointer;
+  color: #888;
 }
-label{
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+
+#big-banner span {
+  display: block;
+  margin-bottom: 10px;
 }
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float:left;
+
+#big-banner span i {
+  margin-right: 5px;
 }
-input[type=submit]:hover {
-background-color: #32a336;
+
+body header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  background-color: var(--bg-color);
+  font-family: "Montserrat";
 }
-.container{
-    border-radius: 5px;
-    background-color:#f2f2f2;
-    padding: 20px;
+
+#logo_link {
+  display: flex;
+  grid-column: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
-.col-10{
-    float: left;
-    width:10%;
-    margin-top: 6px;
+
+h1 {
+  grid-column: 2;
+  font-size: 3em;
+  text-align: center;
 }
-.col-90{
-    float: left;
-    width: 90%;
-    margin-top: 6px;
+
+nav ul {
+  display: inline;
+  flex-direction: column;
+  list-style: none;
+  background-color: #053c5e;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
+
+nav ul li {
+  border: 1px solid white;
+  text-align: center;
+  color: #264a41;
+  background-color: #b9a2a2;
+  transition: .5s;
 }
+
+nav ul li:hover {
+  background-color: #f07167;
+  color: black;
+}
+
+.active {
+  background-color: #b9a2a2;
+  color: black;
+}
+
+nav a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: #264a41;
+  min-width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.header-today {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff9eb;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.25em;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  width: 100%;
+}
+
+.logoHeader {
+  width: 120px;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: var(--bg-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr  1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.contact-info iframe {
+/*   display: grid;
+  grid-template-columns: 1fr 1fr; */
+  width: 400px;
+  height: 170px;
+  border: none;
+}
+
+.contact-info h3 {
+  text-align: l;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: 1fr fr 1fr;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #264a41;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-links i {
+  margin-right: 10px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 10px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo .header {
+  font-size: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#primaryNav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#primaryNav li {
+  margin-right: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.date {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 600px) {
-    .col-10,.col-90,input[type=submit]{
-        width: 100%;
-        margin-top: 0;
-    }
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
 }

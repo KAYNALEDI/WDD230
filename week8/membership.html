@@ -1,182 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OAR CHAMBER SITE</title>
-    <meta name="description" content="Lesson 6: Responsive Page" WDD 230: Web Frontend Development assignment at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/chamber.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
-    <link rel="stylesheet" href="./css/membership.css">
-                                                      
-    <script defer src="../js/dates.js"></script>
-</head>
-<body>
-    <header>
-        <div class="logo">
-                     
-            <img src= "https://github.com/KAYNALEDI/wdd230/blob/Week-1/week5/images/wee.jpeg?raw=true" alt="Website logo">
-            <div class="header">
-              <h1>Oar Chamber Services</h1>
-        <span> Oar Chamber Services</span>
-                </div>
-            </div>
-        </div>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>&#10005;</span></button>
-        <nav>
-            <ul id="primaryNav">
-                <li><a href="week6/discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="socials">
-            <a href="#"><img src="images/twitter.png" alt="Twitter logo"></a>
-            <a href="#"><img src="images/facebook.png" alt= "Facebook logo"></a>
-            
-        </div>
-        <div class="date"><span id="currentDate"></span></div>
-    </header>
-                                 
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta Directory </title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-    <body>
-        <h1>Membership Registaration Form</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <label for="fname">First Name:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="lname">Last Name:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="email">Email:</label>
-                </div>
-                <div class="col-90">
-                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="mobile">Mobile:</label>
-                </div>
-                <div class="col-90">
-                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="gender" required>Gender:</label>
-                </div>
-                <div class="col-90">
-                    <input type="radio" id="male" name="gender" value="male"/>Male
-                    <input type="radio" id="female" name="gender" value="female"/>Female
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="dob">Date Of Birth:</label>
-                </div>
-                <div class="col-90">
-                    <input type="Date" id="dob" name="dob">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="address">Address:</label>
-                </div>
-                <div class="col-90">
-                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="city">City:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="city" name="city" maxlength="10">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="pincode">Area PIN:</label>
-                </div>
-                <div class="col-90">
-                    <input type="number" id="pin" name="pin" maxlength="6">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="state">State:</label>
-                </div>
-                <div class="col-90">
-                    <input type="text" id="state" name="state">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="qualification" required >Membership:</label>
-                </div>
-                <div class="col-90">
-                    <select name="qualification" id="membership">
-                        <option value=" ">Select Membership:</option>
-                        <option value="NP Member">NP Membership</option>                 
-                        <option value="Bronze">Bronze</option>
-                        <option value="Silver.">Silver</option>
-                        <option value="Gold">Gold</option>
-                      
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="specialization">Specialization:</label>
-                </div>
-                <div class="col-90">
-                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Volunteer">Volunteer<br/>
-                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Student">Student<br/>
-                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Press">Press<br/>
-                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Investor">Investor<br/>
-                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Other">Other<br/>                                                                                              
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <label for="password">Password:</label>
-                </div>
-                <div class="col-90">
-                    <input type="password" id="password" name="password" maxlength="8">
-                </div>
-            </div>
-            <div class="row">
-                
-               <button type="submit" onClick="submit-button">Submit</submit-button>                                                                       
-            </div>  
-        </div>  
-  
-    </main>
-    <div>
-          &copy; <span id="copyrightyear"></span> | Nokwazi Kunene| Florida| <a href="https://www.byui.edu/online">BYUI
-                Online Learning</a>
+    
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/large.css">
+  <link rel="stylesheet" type="text/css" href="css/medium.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    
+  </style>
+</head>
+
+<body>
+    <div class="shadow-blocker-1"></div>
+    <div class="shadow-blocker-2"></div>
+    <div id="big-banner">
+        <i class="fa fa-bell"></i>
+        <span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m..</span>
+        <i onclick="closeBanner()" class="fa fa-close"></i>
+    </div>
+  <header>
+    <div id="logo_link">
+      <!-- Add logo here -->
+      <img id="logo"
+      class="logoHeader"
+      src="./wee.jpeg"
+         alt="keys pic" /> 
+    <h1> Oar Chamber Services</h1>
+
+  </header>
+
+  <div class="header-today">
+    <p class="date"></p>
+
+  </div>
+    <nav>
+      <ul id = "navbar">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./discovery.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Membership Registration Form</h1>
+    <div class="container">
+      <div class="form-row">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+      </div>
+      <div class="form-row">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-row">
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+      </div>
+      <div class="form-row">
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
         </div>
-        Last Updated: <span id="last-updated"></span>
-    </footer>
-    <script src="js/script.js"></script>
-     <script src="js/membership.js"></script>                         
-                              
+      </div>
+      <div class="form-row">
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+      <div class="form-row">
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" maxlength="10">
+      </div>
+      <div class="form-row">
+        <label for="pin">Area PIN:</label>
+        <input type="number" id="pin" name="pin" maxlength="6">
+      </div>
+      <div class="form-row">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+      </div>
+      <div class="form-row">
+        <label for="membership">Membership:</label>
+        <select name="membership" id="membership">
+          <option value="">Select Membership:</option>
+          <option value="NP Member">NP Membership - Free</option>
+          <option value="Bronze">Bronze - $10/month</option>
+          <option value="Silver">Silver - $20/month</option>
+          <option value="Gold">Gold - $30/month</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="membership-benefits">Membership Benefits:</label>
+        <ul id="membership-benefits">
+          <li><strong>NP Membership:</strong> Free access to basic features.</li>
+          <li><strong>Bronze Membership:</strong> Access to premium features, monthly newsletter, and 24/7 support.</li>
+          <li><strong>Silver Membership:</strong> All Bronze benefits plus priority customer support and exclusive discounts.</li>
+          <li><strong>Gold Membership:</strong> All Silver benefits plus access to premium events and personalized assistance.</li>
+        </ul>
+      </div>
+      <div class="form-row">
+        <label for="specialization">Specialization:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="volunteer" name="specialization[]" value="Volunteer">
+          <label for="volunteer">Volunteer</label>
+          <input type="checkbox" id="student" name="specialization[]" value="Student">
+          <label for="student">Student</label>
+          <input type="checkbox" id="press" name="specialization[]" value="Press">
+          <label for="press">Press</label>
+          <input type="checkbox" id="investor" name="specialization[]" value="Investor">
+          <label for="investor">Investor</label>
+          <input type="checkbox" id="other" name="specialization[]" value="Other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="8">
+      </div>
+      <div class="form-row">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </main>
+
+     <footer>
+         <section class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8077593852627!2d-80.2661529!3d25.743870200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b792009bee03%3A0x81d714e694aca60e!2s564%20Catalonia%20Ave%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686157201590!5m2!1sen!2sus" 
+                width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                <ul class="fa-ul">
+                    <h3>Contact Information</h3>
+                    <li><i class="fa-li fa fa-location-arrow"></i>564<sup>th</sup>
+                        Catalonia Ave<span id="brk1"></span>
+                          Miami, Florida 22155</li>
+                      <li><i class="fa-li fa fa-phone"></i>(305) 323-6571</li>
+                      <li><i class="fa-li fa fa-envelope"></i>
+                        info@OWS.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://currents.google.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-google-plus-square"></i>Google Plus</a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-facebook-square"></i>Facebook</a>
+                    <a href="https://flickr.com/" target="_blank" rel="noopener">
+                       <i class="fa fa-flickr"></i>Flickr</a>
+                </div>
+            </section>
+      
+      
+            &copy;<span id="currentyear"></span>Oar Chamber Services </p>
+                <p><strong> Nokwazi Kunene </strong> </p>
+                <p> WDD 230 Project </p>  
+             <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>  | 
+        </div>
+        Last Updated: <span id="last-updated"></span> 
+
+           </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./js/scripts.js"></script>
+         <script src="js/directory.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/membership.js"></script>
 </body>
 </html>
